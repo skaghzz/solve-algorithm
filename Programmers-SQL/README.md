@@ -10,3 +10,4 @@
   - [JOIN](https://programmers.co.kr/learn/courses/30/parts/17046)
   - [String, Date](https://programmers.co.kr/learn/courses/30/parts/17047)
 - 종류 별로 1개의 파일이 생성됩니다.
+- MySQL 구문
