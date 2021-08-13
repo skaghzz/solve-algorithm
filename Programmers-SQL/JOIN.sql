@@ -22,3 +22,12 @@ ON i.ANIMAL_ID = o.ANIMAL_ID
 WHERE o.ANIMAL_ID IS NULL
 ORDER BY i.DATETIME
 LIMIT 3;
+
+-- 보호소에서 중성화한 동물
+-- https://programmers.co.kr/learn/courses/30/lessons/59045
+SELECT i.ANIMAL_ID, i.ANIMAL_TYPE, i.NAME
+FROM ANIMAL_INS i JOIN ANIMAL_OUTS o
+ON i.ANIMAL_ID = o.ANIMAL_ID
+WHERE i.SEX_UPON_INTAKE LIKE '%Intact%'
+AND (o.SEX_UPON_OUTCOME like '%Spayed%' OR o.SEX_UPON_OUTCOME like '%Neutered%')
+ORDER BY i.ANIMAL_ID;
