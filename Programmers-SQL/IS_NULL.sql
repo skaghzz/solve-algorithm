@@ -8,4 +8,10 @@ WHERE NAME IS NULL;
 -- https://programmers.co.kr/learn/courses/30/lessons/59407
 SELECT ANIMAL_ID
 FROM ANIMAL_INS
-WHERE NAME IS NOT NULL
+WHERE NAME IS NOT NULL;
+
+-- NULL 처리하기
+-- https://programmers.co.kr/learn/courses/30/lessons/59410
+SELECT ANIMAL_TYPE, IFNULL(NAME, "No name"), SEX_UPON_INTAKE
+FROM ANIMAL_INS
+ORDER BY ANIMAL_ID;
