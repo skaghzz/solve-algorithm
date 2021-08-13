@@ -12,3 +12,17 @@ SELECT NAME, COUNT(*) FROM ANIMAL_INS WHERE NAME IS NOT NULL GROUP BY NAME HAVIN
 -- https://programmers.co.kr/learn/courses/30/lessons/59412
 SELECT hour(DATETIME) as HOUR, COUNT(*) AS COUNT FROM ANIMAL_OUTS GROUP BY HOUR HAVING HOUR BETWEEN 9 AND 20 ORDER BY HOUR
 ;
+
+-- 입양 시각 구하기(2)
+-- https://programmers.co.kr/learn/courses/30/lessons/59413
+set @time=-1;
+
+select @time:=@time+1,
+  (
+      select count(*)
+        from ANIMAL_OUTS
+       where hour(datetime)=@time
+  )
+from ANIMAL_OUTS
+where @time<23
+order by @time
