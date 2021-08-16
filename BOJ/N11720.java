@@ -3,7 +3,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class Main {
+/**
+ * [백준] 11720번 숫자의 합
+ */
+public class N11720 {
     public static void main(String args[]) throws IOException {
         // 입력 값 셋팅
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

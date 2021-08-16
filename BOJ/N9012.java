@@ -3,7 +3,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class Main {
+/**
+ * [백준] 9012번 괄호
+ */
+public class N9012 {
     public static void main(String args[]) throws IOException {
         // 입력 값 셋팅
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
