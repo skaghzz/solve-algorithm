@@ -5,7 +5,6 @@ import java.util.*;
 
 /**
  * [백준] 문제번호 문제명
- * 링크 : http://acmicpc~~
  */
 public class Main {
     public static void main(String args[]) throws IOException {
