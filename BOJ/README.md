@@ -7,6 +7,9 @@
 - [백준] 1013번 Contact
   - [문제](https://www.acmicpc.net/problem/1013)
   - [소스코드](./N1013.java)
+- [백준] 12904번 A와 B
+  - [문제](https://www.acmicpc.net/problem/12904)
+  - [소스코드](./N12904.java)
 
 ## 2021.08.16
 - [백준] 5052번 전화번호 목록
